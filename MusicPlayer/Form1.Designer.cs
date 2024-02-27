@@ -51,12 +51,14 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.Desktop;
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.button1.Location = new System.Drawing.Point(651, 397);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 35);
             this.button1.TabIndex = 2;
             this.button1.Text = "Select song";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
@@ -77,9 +79,8 @@
             this.songNameLabel.Location = new System.Drawing.Point(438, 24);
             this.songNameLabel.Name = "songNameLabel";
             this.songNameLabel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 10);
-            this.songNameLabel.Size = new System.Drawing.Size(77, 35);
+            this.songNameLabel.Size = new System.Drawing.Size(0, 35);
             this.songNameLabel.TabIndex = 6;
-            this.songNameLabel.Text = "";
             // 
             // albumNameLabel
             // 
@@ -87,9 +88,8 @@
             this.albumNameLabel.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.albumNameLabel.Location = new System.Drawing.Point(438, 78);
             this.albumNameLabel.Name = "albumNameLabel";
-            this.albumNameLabel.Size = new System.Drawing.Size(55, 16);
+            this.albumNameLabel.Size = new System.Drawing.Size(0, 16);
             this.albumNameLabel.TabIndex = 7;
-            this.albumNameLabel.Text = "";
             // 
             // artistNameLabel
             // 
@@ -98,14 +98,14 @@
             this.artistNameLabel.Location = new System.Drawing.Point(440, 59);
             this.artistNameLabel.Name = "artistNameLabel";
             this.artistNameLabel.Padding = new System.Windows.Forms.Padding(0, 0, 0, 3);
-            this.artistNameLabel.Size = new System.Drawing.Size(43, 19);
+            this.artistNameLabel.Size = new System.Drawing.Size(0, 19);
             this.artistNameLabel.TabIndex = 8;
-            this.artistNameLabel.Text = "";
             // 
             // MusicPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(783, 487);
             this.Controls.Add(this.artistNameLabel);
             this.Controls.Add(this.albumNameLabel);
@@ -117,6 +117,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MusicPlayer";
             this.Text = "MusicPlayer";
+            this.Load += new System.EventHandler(this.MusicPlayer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

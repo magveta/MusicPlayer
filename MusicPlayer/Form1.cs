@@ -72,5 +72,10 @@ namespace MusicPlayer
                 }
             }
         }
+
+        private void MusicPlayer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
